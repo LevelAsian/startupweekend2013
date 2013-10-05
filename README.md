@@ -1,2 +1,3 @@
-startupweekend2013
-==================
+"Faen, jeg har lyst på penger"
+==============================
+          -JQrgen
