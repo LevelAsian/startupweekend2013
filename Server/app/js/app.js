@@ -11,6 +11,11 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
         $routeProvider.when('/main', {
             templateUrl: '/app/partials/main.html',
             controller: 'MainCtrl'});
+        
+        $routeProvider.when('/paymentForm', {
+            templateUrl: '/app/partials/paymentForm.html',
+            controller: 'paymentFormCtrl'});
+        
 
         $routeProvider.otherwise({
             redirectTo: '/main'});

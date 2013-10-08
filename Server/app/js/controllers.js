@@ -8,4 +8,9 @@ angular.module('myApp.controllers', [])
 
         
 
+    })
+    
+    .controller('paymentFormCtrl', function($scope, $http, $location, $rootScope, $route){
+
+
     });
