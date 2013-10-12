@@ -10,11 +10,15 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
 
         $routeProvider.when('/main', {
             templateUrl: '/app/partials/main.html',
-            controller: 'MainCtrl'});
+            controller: 'mainCtrl'});
         
         $routeProvider.when('/paymentForm', {
             templateUrl: '/app/partials/paymentForm.html',
             controller: 'paymentFormCtrl'});
+
+        $routeProvider.when('/register', {
+            templateUrl: '/app/partials/register.html',
+            controller: 'registerCtrl'});
         
 
         $routeProvider.otherwise({
