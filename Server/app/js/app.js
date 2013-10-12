@@ -1,21 +1,15 @@
 'use strict';
 
-
-// Declare app level module which depends on filters, and services
 var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
     config(['$routeProvider', function($routeProvider) {
 
         $routeProvider.when('/', {
             redirectTo: '/main'});
 
-        $routeProvider.when('/register', {
-            templateUrl: '/app/partials/register.html',
-            controller: 'registerCtrl'});
-
         $routeProvider.when('/main', {
             templateUrl: '/app/partials/main.html',
             controller: 'mainCtrl'});
-        
+
         $routeProvider.when('/driver_input', {
             templateUrl: '/app/partials/driver_input.html',
             controller: 'driver_inputCtrl'});
@@ -26,13 +20,16 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
 
         $routeProvider.when('/passenger_input', {
             templateUrl: '/app/partials/passenger_input.html',
-            controller: 'passenger_inputCtrl'});
+            controller: 'passenger_inputCtrl'})
 
         $routeProvider.when('/passenger_output', {
             templateUrl: '/app/partials/passenger_output.html',
-            controller: 'passenger_outputCtrl'});
+            controller: 'passenger_outputCtrl'})
+
+        $routeProvider.when('/register', {
+            templateUrl: '/app/partials/register.html',
+            controller: 'registerCtrl'})
 
         $routeProvider.otherwise({
             redirectTo: '/main'});
     }]);
-
