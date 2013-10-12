@@ -1,5 +1,9 @@
 'use strict';
 
+var client = new WindowsAzure.MobileServiceClient(
+    "https://bartebil.azure-mobile.net/",
+    "loEjfZcxsJBBwlCLmVZzRQPgawBWbF54"
+);
 
 angular.module('myApp.controllers', [])
 
@@ -35,4 +39,22 @@ angular.module('myApp.controllers', [])
 
     .controller('registerCtrl', function($scope, $http, $location, $rootScope){
 
+        $scope.register = function() {
+            var user = { customerFirstName: $scope.customerFirstName, customerLastName: $scope.customerLastName, customerEmail: $scope.customerEmail
+            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword
+            , creditCardNumber: $scope.creditCardNumber, cvv: $scope.cvv  };
+
+            client.getTable("User").insert(user);
+
+            $scope.customerFirstName = "";
+            $scope.customerLastName = "";
+            $scope.customerEmail = "";
+            $scope.customerPhoneNumber = "";
+            $scope.customerPassword = "";
+            $scope.creditCardNumber = "";
+            $scope.cvv = "";
+
+            $location.path("/");
+        }
+        
     })

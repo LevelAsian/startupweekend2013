@@ -23,12 +23,6 @@
                 </div>
                 <br>
                 <div class="controls">
-                    <input type="text" id="re-email" placeholder="Re-enter Email"
-                           class="form-search input-mysize"
-                           ng-model="customerReEmail" required>
-                </div>
-                <br>
-                <div class="controls">
                     <input type="text" id="phone" placeholder="Your Phone Number"
                            class="form-search input-mysize"
                            ng-model="customerPhoneNumber" required>
@@ -56,9 +50,7 @@
         <div class="modal-footer">
             <button class="btn btn-success"
                     ng-disabled="customerForm.$invalid"
-                    ng-click="register(customerFirstName, customerLastName, customerEmail,
-                               customerPassword, rewritePassword, customerPhoneNumber,
-                               creditCardNumber, cvv, expirationDate, postalCode)">Register</button>
+                    ng-click="register()">Register</button>
         </div>
     </div>
 </form>
