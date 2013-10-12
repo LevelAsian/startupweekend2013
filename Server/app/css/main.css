@@ -5,8 +5,8 @@
 }
 
 .driverwrapper{
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     background-color: #009393;
     color: #fffcc4;
     display: inline-block;
@@ -20,8 +20,8 @@
 }
 
 .passengerwrapper{
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     background-color: #fffcc4;
     color: #009393;
     display: inline-block;
