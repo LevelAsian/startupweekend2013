@@ -1,0 +1,67 @@
+@font-face
+{
+    font-family: mainfont;
+    src: url(../vendor/fonts/OCRAStd.otf);
+}
+
+.driverwrapper{
+    height: 700px;
+    width: 700px;
+    background-color: #009393;
+    color: #fffcc4;
+    display: inline-block;
+    zoom: 1;
+}
+
+.driverwrapper:hover{
+    background-color: #038787;
+}
+
+.passengerwrapper{
+    height: 700px;
+    width: 700px;
+    background-color: #fffcc4;
+    color: #009393;
+    display: inline-block;
+    zoom: 1;
+}
+
+.passengerwrapper:hover{
+    background-color: #f3f0bb;
+}
+
+.rowmain{
+    width: 100%;
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+
+.drivertext{
+    margin-top: 300px;
+    font-size: 200%;
+}
+
+.passengertext{
+    margin-top: 300px;
+    font-size: 200%;
+}
+
+h1{
+    font-family: mainfont, Arial;
+    line-height: 100%;
+    font-size: 200%;
+}
+
+.carimg{
+    height: 218px;
+    width: 366px;
+    margin: 250px;
+    margin-left: 570px;
+    position: absolute;
+    background: url("../img/carlogo.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+

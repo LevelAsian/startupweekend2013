@@ -1,8 +1,9 @@
 'use strict';
 
-var hasreloaded = false;
+angular.module('myApp.controllers', [])
 
-myApp.controller('registerCtrl', function($scope, $http, $location, $rootScope, route) {
+
+    .controller('registerCtrl', function($scope, $http, $location, $rootScope, route) {
     $scope.register = function(customerFirstName, customerLastName, customerEmail,
                                customerPassword, rewritePassword, customerPhoneNumber,
                                creditCardNumber, cvv, expirationDate, postalCode ) {
@@ -19,6 +20,5 @@ myApp.controller('registerCtrl', function($scope, $http, $location, $rootScope, 
         $location.url('/');
     };
 });
-
 
 

@@ -8,18 +8,29 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
         $routeProvider.when('/', {
             redirectTo: '/main'});
 
+        $routeProvider.when('/register', {
+            templateUrl: '/app/partials/register.html',
+            controller: 'registerCtrl'});
+
         $routeProvider.when('/main', {
             templateUrl: '/app/partials/main.html',
             controller: 'mainCtrl'});
         
-        $routeProvider.when('/paymentForm', {
-            templateUrl: '/app/partials/paymentForm.html',
-            controller: 'paymentFormCtrl'});
+        $routeProvider.when('/driver_input', {
+            templateUrl: '/app/partials/driver_input.html',
+            controller: 'driver_inputCtrl'});
 
-        $routeProvider.when('/register', {
-            templateUrl: '/app/partials/register.html',
-            controller: 'registerCtrl'});
-        
+        $routeProvider.when('/driver_output', {
+            templateUrl: '/app/partials/driver_output.html',
+            controller: 'driver_outputCtrl'});
+
+        $routeProvider.when('/passenger_input', {
+            templateUrl: '/app/partials/passenger_input.html',
+            controller: 'passenger_inputCtrl'});
+
+        $routeProvider.when('/passenger_output', {
+            templateUrl: '/app/partials/passenger_output.html',
+            controller: 'passenger_outputCtrl'});
 
         $routeProvider.otherwise({
             redirectTo: '/main'});
