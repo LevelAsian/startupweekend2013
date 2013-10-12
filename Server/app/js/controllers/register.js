@@ -1,10 +1,11 @@
 'use strict';
 
-var hasreloaded = false;
+angular.module('myApp.controllers', [])
 
-myApp.controller('registerCtrl', function($scope, $http, $location, $rootScope, route) {
+    .controller('registerCtrl', function($scope, $http, $location, $rootScope, route) {
 
-});
+
+    });
 
 
 
