@@ -4,7 +4,7 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
     config(['$routeProvider', function($routeProvider) {
 
         $routeProvider.when('/', {
-            redirectTo: '/main'});
+            redirectTo: '/register'});
 
         $routeProvider.when('/main', {
             templateUrl: '/app/partials/main.html',

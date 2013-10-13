@@ -14,8 +14,8 @@ angular.module('myApp.controllers', [])
         $location.path("/passenger_input");
     }
 
-    $scope.goToDriver_input = function(){
-        $location.path("/driver_input");
+    $scope.goToDriver_output = function(){
+        $location.path("/driver_output");
     }
 
     })
@@ -39,6 +39,10 @@ angular.module('myApp.controllers', [])
 
     .controller('registerCtrl', function($scope, $http, $location, $rootScope){
 
+        $scope.login = function() {
+            $location.path("/main");
+        }
+
         $scope.message = function() {
             ""
         }
@@ -57,7 +61,7 @@ angular.module('myApp.controllers', [])
             $scope.creditCardNumber = "";
             $scope.cvv = "";
 
-            $location.path("/");
+            $location.path("/main");
         }
         
     })
