@@ -1,65 +1,69 @@
-<form class="form-horizontal" name="customerForm" novalidate>
-    <div class="modal">
-        <div class="modal-header">
-            <h3>Register</h3>
-        </div>
-        <div class="modal-body">
-
-            <div class="control-group">
-                <div class="controls">
-                    <input type="text" id="customerFirstName" placeholder="First Name"
-                           class="input-medium"
-                           ng-model="customerFirstName" required>
-                    <input type="text" id="customerLastName" placeholder="Last Name"
-                            class="input-medium"
-                            ng-model="customerLastName" required>
-
-                </div>
-                <br>
-                <div class="controls">
-                    <input type="text" id="customerEmail" placeholder="Your Email"
-                           class="form-search input-mysize"
-                           ng-model="customerEmail" required>
-                </div>
-                <br>
-                <div class="controls">
-                    <input type="text" id="re-email" placeholder="Re-enter Email"
-                           class="form-search input-mysize"
-                           ng-model="customerReEmail" required>
-                </div>
-                <br>
-                <div class="controls">
-                    <input type="text" id="phone" placeholder="Your Phone Number"
-                           class="form-search input-mysize"
-                           ng-model="customerPhoneNumber" required>
-                </div>
-                <br>
-                <div class="controls">
-                    <input type="text" id="password" placeholder="Password"
-                           class="form-search input-mysize"
-                           ng-model="customerPassword" required>
-                </div>
-                <br>
-                <div class="controls">
-                    <input type="text" id="creditCardNumber" placeholder="Credit Card Number"
-                            class="form-search input-mysizeCredit"
-                            ng-model="creditCardNumber" required>
-                    <input type="text" id="cvv" placeholder="cvv"
-                            class="form-search input-mysizeCvv"
-                            ng-model="cvv">
-                </div>
-                <br>
-
-
+<div class="mainContainer">
+    <div class="navbar navColor">
+        <div class="navbar-inner">
+            <div class="pull-right">
+                <tr>
+                    <td>
+                        <input type="text" class="inputtext1 " name="email" id="email" value tabindex="1" placeholder="Email">
+                    </td>
+                    <td>
+                        <input type="text" class="inputtext2 " name="password" id="pass" value tabindex="1" placeholder="Password">
+                    </td>
+                    <td>
+                        <button class="loginButton">login</button>
+                    </td>
+                </tr>
             </div>
+
         </div>
-        <div class="modal-footer">
-            <button class="btn btn-success"
-                    ng-disabled="customerForm.$invalid"
-                    ng-click="register(customerFirstName, customerLastName, customerEmail,
+        <form class="form-horizontal " name="customerForm" novalidate>
+            <div class="registerbox">
+                <div>
+                    <div class="registerAlign">
+                        <input type="text" id="customerFirstName" placeholder="First Name"
+                               class="input-medium"
+                               ng-model="customerFirstName" required>
+                        <input type="text" id="customerLastName" placeholder="Last Name"
+                               class="input-medium"
+                               ng-model="customerLastName" required>
+
+                    </div>
+                    <br>
+                    <div class="registerAlign">
+                        <input type="text" id="customerEmail" placeholder="Your Email"
+                               class="form-search input-mysize"
+                               ng-model="customerEmail" required>
+                    </div>
+                    <br>
+                    <div class="registerAlign">
+                        <input type="text" id="re-email" placeholder="Re-enter Email"
+                               class="form-search input-mysize"
+                               ng-model="customerReEmail" required>
+                    </div>
+                    <br>
+                    <div class="registerAlign">
+                        <input type="text" id="phone" placeholder="Your Phone Number"
+                               class="form-search input-mysize"
+                               ng-model="customerPhoneNumber" required>
+                    </div>
+                    <br>
+                    <div class="registerAlign">
+                        <input type="text" id="password" placeholder="Password"
+                               class="form-search input-mysize"
+                               ng-model="customerPassword" required>
+                    </div>
+                    <br>
+                    <button class="btn btn-success pull-right"
+                            ng-disabled="customerForm.$invalid"
+                            ng-click="register(customerFirstName, customerLastName, customerEmail,
                                customerPassword, rewritePassword, customerPhoneNumber,
                                creditCardNumber, cvv, expirationDate, postalCode)">Register</button>
-        </div>
-    </div>
-</form>
 
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
