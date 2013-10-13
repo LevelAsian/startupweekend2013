@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+
+      #panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+var map;
+var directionsDisplay;
+var directionsService;
+var stepDisplay;
+var markerArray = [];
+var oslo = new google.maps.LatLng(59.91432, 10.74927);
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+function initialize() {
+
+  directionsService = new google.maps.DirectionsService();
+
+
+  var mapOptions = {
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: oslo
+  }
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var rendererOptions = {
+    map: map
+  }
+  directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions)
+
+	stepDisplay = new google.maps.InfoWindow();
+	
+	var marker = new google.maps.Marker({
+      position: oslo,
+      map: map,
+      title: 'You are here!'
+  });
+}
+
+function calcRoute() {
+
+  for (var i = 0; i < markerArray.length; i++) {
+    markerArray[i].setMap(null);
+  }
+
+  markerArray = [];
+
+  var start = new google.maps.LatLng(59.91432, 10.74927);
+  var end = document.getElementById('end').value;
+  var request = {
+      origin: oslo,
+      destination: end,
+      travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      var warnings = document.getElementById('warnings_panel');
+      warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
+			document.getElementById('distance').innerHTML = 
+            response.routes[0].legs[0].distance.value + " meters";
+			document.getElementById('duration').innerHTML = 
+            response.routes[0].legs[0].duration.value + " seconds";
+			document.getElementById('kroner').innerHTML = 
+            (response.routes[0].legs[0].distance.value + response.routes[0].legs[0].duration.value)/50+ ",-";
+      directionsDisplay.setDirections(response);
+      showSteps(response);
+    }
+  });
+
+}
+
+function calcRoute2() {
+
+  for (var i = 0; i < markerArray.length; i++) {
+    markerArray[i].setMap(null);
+  }
+
+  markerArray = [];
+
+  var start = new google.maps.LatLng(59.91432, 10.74927);
+  var end = new google.maps.LatLng(59.75278506652386, 10.847926139831543);
+  var request = {
+      origin: oslo,
+      destination: end,
+      travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      var warnings = document.getElementById('warnings_panel');
+      warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
+			document.getElementById('distance').innerHTML = 
+            response.routes[0].legs[0].distance.value + " meters";
+			document.getElementById('duration').innerHTML = 
+            response.routes[0].legs[0].duration.value + " seconds";
+			document.getElementById('kroner').innerHTML = 
+            (response.routes[0].legs[0].distance.value + response.routes[0].legs[0].duration.value)/50+ ",-";
+      directionsDisplay.setDirections(response);
+      showSteps(response);
+    }
+  });
+
+}
+
+function showSteps(directionResult) {
+  var myRoute = directionResult.routes[0].legs[0];
+	
+	var marker1 = new google.maps.Marker({
+      position: myRoute.steps[0].start_point,
+      map: map
+    });
+    attachInstructionText(marker1, myRoute.steps[i].instructions);
+	var marker2 = new google.maps.Marker({
+      position: myRoute.steps[-1].start_point,
+      map: map
+    });
+    attachInstructionText(marker2, myRoute.steps[i].instructions);
+}
+
+function peniskake(){
+
+}
+
+
+
+
+    </script>
+  </head>
+  <body>
+		<div style="width:500px">
+		<input id="end" type="text" value=""/>
+		<button onclick="calcRoute();">CALCULATE!</button>
+		<button onclick="calcRoute2();">GO HOME!</button>
+		<div id="kroner"></div>
+		<a href="./#/passenger_input"><button id="next">ORDER!</button></a>
+		</div>
+    <div id="map-canvas"></div>
+    &nbsp;
+		<div id="duration">Duration: </div> 
+   	<div id="distance">Distance: </div> 
+    <div id="warnings_panel" style="width:100%;height:10%;text-align:center"></div>
+  </body>
+</html>

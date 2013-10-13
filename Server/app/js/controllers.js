@@ -11,7 +11,7 @@ angular.module('myApp.controllers', [])
     $scope.hei = "basdbasdbdadsa";
 
     $scope.goToPassenger_input = function(){
-        $location.path("/passenger_input");
+        $location.path("/map.html");
     }
 
     $scope.goToDriver_output = function(){
