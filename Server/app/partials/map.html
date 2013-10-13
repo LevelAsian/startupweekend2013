@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+
+      #panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+var directionsDisplay;
+var directionsService;
+var stepDisplay;
+var markerArray = [];
+var oslo = new google.maps.LatLng(59.91387, 10.75225);
+
+function initialize() {
+  directionsService = new google.maps.DirectionsService();
+
+
+  var mapOptions = {
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: oslo
+  }
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var rendererOptions = {
+    map: map
+  }
+  directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions)
+
+	stepDisplay = new google.maps.InfoWindow();
+	
+	var marker = new google.maps.Marker({
+      position: oslo,
+      map: map,
+      title: 'You are here!'
+  });
+}
+
+function calcRoute() {
+
+  for (var i = 0; i < markerArray.length; i++) {
+    markerArray[i].setMap(null);
+  }
+
+  markerArray = [];
+
+  var start = new google.maps.LatLng(59.91432, 10.74927);
+  var end = document.getElementById('end').value;
+  var request = {
+      origin: start,
+      destination: end,
+      travelMode: google.maps.TravelMode.WALKING
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      var warnings = document.getElementById('warnings_panel');
+      warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
+      directionsDisplay.setDirections(response);
+      showSteps(response);
+    }
+  });
+}
+
+function showSteps(directionResult) {
+  var myRoute = directionResult.routes[0].legs[0];
+	
+	var marker1 = new google.maps.Marker({
+      position: myRoute.steps[0].start_point,
+      map: map
+    });
+    attachInstructionText(marker1, myRoute.steps[i].instructions);
+	var marker2 = new google.maps.Marker({
+      position: myRoute.steps[-1].start_point,
+      map: map
+    });
+    attachInstructionText(marker2, myRoute.steps[i].instructions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+		<div style="width:500px">
+		<input id="end" type="text" value=""/>
+		<button onclick="calcRoute();">halla</button>
+		</div>
+    <div id="map-canvas"></div>
+    &nbsp;
+    <div id="warnings_panel" style="width:100%;height:10%;text-align:center"></div>
+  </body>
+</html>

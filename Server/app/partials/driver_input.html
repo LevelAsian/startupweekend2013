@@ -6,7 +6,6 @@
             <div>Today</div><div>Tomorrow</div>
             <h1>Where are you located?</h1>
             <div ng-repeat="test in tester">
-                <p>{{test}}</p>
                 <h3>HEI</h3>
             </div>
 
@@ -15,23 +14,15 @@
     <!--<div class="footer"></div>-->
 </div>
 
-
-<ul id="menu">
-    <li><a href="#">Menu 2</a>
-
-        <ul class="sub-menu">
-            <li>
-                <a href="#">{{hei}}</a>
-            </li>
-            <li>
-                <a href="#">Sub Menu 2</a>
-            </li>
-            <li>
-                <a href="#">Sub Menu 3</a>
-            </li>
-            <li>
-                <a href="#">Sub Menu 4</a>
-            </li>
-        </ul>
-    </li>
-</ul>
+<div ng-init="friends = [
+{name:'John', age:25, gender:'boy'},
+{name:'Jessie', age:30, gender:'girl'},
+{name:'Johanna', age:28, gender:'girl'},
+{name:'Joy', age:15, gender:'girl'},
+{name:'Mary', age:28, gender:'girl'},
+{name:'Peter', age:95, gender:'boy'},
+{name:'Sebastian', age:50, gender:'boy'},
+{name:'Erika', age:27, gender:'girl'},
+{name:'Patrick', age:40, gender:'boy'},
+{name:'Samantha', age:60, gender:'girl'}
+]">

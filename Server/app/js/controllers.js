@@ -1,14 +1,27 @@
 'use strict';
 
+var client = new WindowsAzure.MobileServiceClient(
+    "https://bartebil.azure-mobile.net/",
+    "loEjfZcxsJBBwlCLmVZzRQPgawBWbF54"
+);
 
 angular.module('myApp.controllers', [])
 
     .controller('mainCtrl', function($scope, $http, $location, $rootScope, $route) {
     $scope.hei = "basdbasdbdadsa";
 
+    $scope.goToPassenger_input = function(){
+        $location.path("/passenger_input");
+    }
+
+    $scope.goToDriver_input = function(){
+        $location.path("/driver_input");
+    }
+
     })
 
     .controller('driver_inputCtrl', function($scope, $routeParams, $http, $rootScope, $route, $location) {
+
 
     })
 
@@ -26,26 +39,26 @@ angular.module('myApp.controllers', [])
 
     .controller('registerCtrl', function($scope, $http, $location, $rootScope){
 
+        $scope.message = function() {
+            ""
+        }
+        $scope.register = function() {
+            var user = { customerFirstName: $scope.customerFirstName, customerLastName: $scope.customerLastName, customerEmail: $scope.customerEmail
+            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword
+            , creditCardNumber: $scope.creditCardNumber, cvv: $scope.cvv  };
+
+            client.getTable("User").insert(user);
+
+            $scope.customerFirstName = "";
+            $scope.customerLastName = "";
+            $scope.customerEmail = "";
+            $scope.customerPhoneNumber = "";
+            $scope.customerPassword = "";
+            $scope.creditCardNumber = "";
+            $scope.cvv = "";
+
+            $location.path("/");
+        }
+        
     })
-
-    .controller('registerCtrl', function($scope, $http, $location, $rootScope, route) {
-        $scope.register = function(customerFirstName, customerLastName, customerEmail,
-                                   customerPassword, rewritePassword, customerPhoneNumber,
-                                   creditCardNumber, cvv, expirationDate, postalCode ) {
-            customer.firstname = customerFirstName;
-            customer.lastname = customerLastName;
-            customer.email = customerEmail;
-            customer.password = customerPassword;
-            customer.phone = customerPhoneNumber;
-            customer.bankInfo.creditcardnumber = creditCardNumber;
-            customer.bankInfo.cvv = cvv;
-            customer.bankInfo.expirationdate = expirationDate;
-            customer.bankInfo.postalcode = postalCode;
-
-            $location.path('/');
-
-
-        };
-    });
-
 

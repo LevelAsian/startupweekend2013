@@ -26,19 +26,12 @@
                         <input type="text" id="customerLastName" placeholder="Last Name"
                                class="input-medium"
                                ng-model="customerLastName" required>
-
                     </div>
                     <br>
                     <div class="registerAlign">
-                        <input type="text" id="customerEmail" placeholder="Your Email"
+                        <input type="text" id="password" placeholder="Password"
                                class="form-search input-mysize"
-                               ng-model="customerEmail" required>
-                    </div>
-                    <br>
-                    <div class="registerAlign">
-                        <input type="text" id="re-email" placeholder="Re-enter Email"
-                               class="form-search input-mysize"
-                               ng-model="customerReEmail" required>
+                               ng-model="customerPassword" required>
                     </div>
                     <br>
                     <div class="registerAlign">
@@ -48,22 +41,18 @@
                     </div>
                     <br>
                     <div class="registerAlign">
-                        <input type="text" id="password" placeholder="Password"
+                        <input type="text" id="customerEmail" placeholder="Your Email"
                                class="form-search input-mysize"
-                               ng-model="customerPassword" required>
+                               ng-model="customerEmail" required>
                     </div>
                     <br>
-                    <button class="btn btn-success pull-right"
-                            ng-disabled="customerForm.$invalid"
+                    <button class="btn btn-success"
+                            ng-click="message()"
                             ng-click="register(customerFirstName, customerLastName, customerEmail,
                                customerPassword, rewritePassword, customerPhoneNumber,
                                creditCardNumber, cvv, expirationDate, postalCode)">Register</button>
-
                 </div>
-            </div>
-        </form>
-
+                </div>
+            </form>
     </div>
-
-
 </div>
