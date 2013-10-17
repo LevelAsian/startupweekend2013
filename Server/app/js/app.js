@@ -31,7 +31,7 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
             controller: 'registerCtrl'})
 
         .when('/min_side', {
-            templateUrl: '/app/partials/min_side.html',
+            templateUrl: '/app/partials/account.html',
             controller: 'min_sideCtrl'
             })
 

@@ -128,6 +128,11 @@ angular.module('myApp.controllers', [])
     })
 
     .controller('min_sideCtrl', function($scope, $http, $location, $rootScope){
-        $scope.hei ="lol";
+        $scope.account_first_name = "jQrgen";
+        $scope.account_last_name = "Svennevik Notland"
+        $scope.account_new_password_1 = "";
+        $scope.account_new_password_2 = "";
+        $scope.account_phone_number = 90080822;
+        $scope.account_email = "jorgen.notland@gmail.com";
     })
 

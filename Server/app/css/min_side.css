@@ -1,16 +1,16 @@
 @font-face
 {
-    font-family: min_side_font;
+    font-family: account_font;
     src: url(../vendor/fonts/OCRAStd.otf);
 }
-.min_sideheader
+.accountheader
 {
     position:fixed;
     height: 50px;
     background-color: #00585f;
     width: 100%;
 }
-.min_sidebody{
+.accountbody{
     margin:0;
     padding:0;
     height:100%;
@@ -18,7 +18,7 @@
     overflow:hidden;
     color: #00585f;
 }
-.min_sidecontent{
+.accountcontent{
     position:fixed;
     top:50px;
     bottom:0;
@@ -26,7 +26,7 @@
     width:100%;
     text-align: center;
 }
-.min_sideinputbox{
+.accountinputbox{
     margin: 5%;
     height: 80%;
     width: 70%;
@@ -36,16 +36,16 @@
     text-align: center;
 }
 
-.min_side_formwrapper{
+.account_formwrapper{
     display: inline-block;
     text-align: center;
 }
-.min_side_form{
+.account_form{
     text-align: left;
     display: inline-block;
 }
-/*.min_side_knapp{
+.account_knapp{
+    position: absolute;
     right: 7%;
     bottom: 7%;
 }
-*/
