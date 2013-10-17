@@ -29,6 +29,9 @@ app.use(express.logger('dev')); // Log requests to the console
 
 // This is the route that sends the base index.html file all other routes are
 // for data only, no server-side views here.
+app.all('/map', function(req, res) { 
+	res.sendfile('map.html', { root:"app"});
+});
 app.all('/', function(req, res) { // Dette går til angular
     res.sendfile('index.html', { root: "app" });
 });

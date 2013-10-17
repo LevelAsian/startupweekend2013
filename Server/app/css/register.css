@@ -1,4 +1,47 @@
-.input-mysize { width: 318px}
-.input-mysize { height: 500px}
-.input-mysizeCredit {width: 250px}
-.input-mysizeCvv {width: 50px}
+.input-mysize {
+    width: 318px
+}
+.input-mysize {
+    height: 500px
+}
+.input-mysizeCredit {
+    width: 250px
+}
+.input-mysizeCvv {
+    width: 50px
+}
+.registerbox {
+    background-color: #f0edbb;
+    width: 1520px;
+    height: 760px;
+
+}
+.registerAlign {
+    text-align: center;
+}
+.inputtext1 {
+    margin-top: 8px;
+    margin-right: 10px;
+    width: 135px
+}
+.inputtext2 {
+    margin-top: 8px;
+    margin-right: 10px;
+    width: 135px
+}
+.loginButton {
+    margin-right: 10px
+}
+.adjustTable {
+    margin-left: 400px
+}
+
+.mainContainer {
+    background-color: #f0edbb
+}
+.moveButton {
+    margin-left: 845px
+}
+.moveForm {
+    margin-top: 100px
+}
