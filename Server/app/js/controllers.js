@@ -82,31 +82,37 @@ angular.module('myApp.controllers', [])
     })
 
     .controller('registerCtrl', function($scope, $http, $location, $rootScope){
+        var User;
+        client.getTable("User").read().done(function (results) {
+            User = results;
+        });
 
         $scope.login = function() {
-            $location.path("/main");
+            for (var i = 0; i < User.length; i++) {
+                if($scope.loginemail == User[i].customerEmail){
+                    if($scope.loginpassword == User[i].customerPassword){
+                        $location.path("/main");
+                    }else{
+                        $scope.tekst="Incorrect password";
+                    }
+                }else{
+                    $scope.tekst="No user with that email";
+                }
+            };
         }
 
-        $scope.message = function() {
-            ""
-        }
         $scope.register = function() {
+
             var user = { customerFirstName: $scope.customerFirstName, customerLastName: $scope.customerLastName, customerEmail: $scope.customerEmail
-            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword
-            , creditCardNumber: $scope.creditCardNumber, cvv: $scope.cvv  };
+            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword};
 
             client.getTable("User").insert(user);
 
-            $scope.customerFirstName = "";
-            $scope.customerLastName = "";
-            $scope.customerEmail = "";
-            $scope.customerPhoneNumber = "";
-            $scope.customerPassword = "";
-            $scope.creditCardNumber = "";
-            $scope.cvv = "";
-
             $location.path("/main");
         }
+
+
+
         
     })
 
