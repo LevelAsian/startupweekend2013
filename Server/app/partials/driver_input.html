@@ -2,16 +2,29 @@
     <div class="driver_inputheader"></div>
     <div class="driver_inputcontent">
         <div class="driver_inputinputbox">
-            <h4>When do you want to drive?</h4>
+            <h1>WHEN DO YOU WANT TO DRIVE?</h1>
             <div class="rowdriver_input">
                 <div ng-class="currentclass2" ng-click="changeclass2()">
-                    <p>Today</p>
+                    <p class="driver_input_font">TODAY</p>
                 </div>
                 <div ng-class="currentclass" ng-click="changeclass1()">
-                    <p>Tomorrow</p>
+                    <p>TOMORROW</p>
                 </div>
+            </div>
+            <div class="driver_input_menu_wrapper">
+                <ul id="driver_input_menu">
+                    <h1>WHERE ARE YOU LOCATED?</h1>
+                    <li class="driver_input_menu_fixer_2"><a href="">Velg fylke(r)<i class="icon-arrow-down"></i></a>
+                        <div class="driver_input_menu_fixer">
+                            <ul class="sub-menu"  ng-repeat="fylke in fylker | orderBy:'name'" >
+                                <li>
+                                    <h4>{{fylke.name}}</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-

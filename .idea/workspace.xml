@@ -24,98 +24,52 @@
     <favorites_list name="startupweekend2013" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="299" selection-end="299" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="738">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="driver_input.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="187" selection-end="187" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="414">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/app/partials/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="451" selection-end="451" vertical-scroll-proportion="0.27348065" vertical-offset="0" max-vertical-offset="724">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="30" selection-start="324" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2124">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/js/filters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="46" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/partials/map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="27" selection-start="2252" selection-end="2252" vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="2124">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="driver_input.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="1" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="1638">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5971223">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Server/app/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="4" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="738">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="driver_input.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="25" selection-start="343" selection-end="343" vertical-scroll-proportion="0.17721519" vertical-offset="0" max-vertical-offset="711">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Server/app/js/controllers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="17" selection-start="624" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="2070">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="driver_input.css" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="128" column="43" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.89873415" vertical-offset="1665" max-vertical-offset="2430">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -139,14 +93,14 @@
         <option value="$PROJECT_DIR$/Server/app/js/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/Server/app/js/controllers/main.js" />
         <option value="$PROJECT_DIR$/Server/app/js/app.js" />
-        <option value="$PROJECT_DIR$/Server/app/css/main.css" />
         <option value="$PROJECT_DIR$/Server/app/index.html" />
+        <option value="$PROJECT_DIR$/Server/app/partials/map.html" />
+        <option value="$PROJECT_DIR$/Server/app/partials/passenger_input.html" />
+        <option value="$PROJECT_DIR$/Server/app/css/main.css" />
+        <option value="$PROJECT_DIR$/Server/app/partials/main.html" />
+        <option value="$PROJECT_DIR$/Server/app/js/controllers.js" />
         <option value="$PROJECT_DIR$/Server/app/partials/driver_input.html" />
         <option value="$PROJECT_DIR$/Server/app/css/driver_input.css" />
-        <option value="$PROJECT_DIR$/Server/app/partials/map.html" />
-        <option value="$PROJECT_DIR$/Server/app/js/controllers.js" />
-        <option value="$PROJECT_DIR$/Server/app/partials/passenger_input.html" />
-        <option value="$PROJECT_DIR$/Server/app/partials/main.html" />
       </list>
     </option>
   </component>
@@ -379,15 +333,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18501629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -419,18 +373,6 @@
         <state line="9" column="48" selection-start="327" selection-end="327" vertical-scroll-proportion="0.2278481" vertical-offset="0" max-vertical-offset="1278" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.46341464" vertical-offset="270" max-vertical-offset="1386" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3078">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/app/partials/passenger_output.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
@@ -441,34 +383,6 @@
     <entry file="file://$PROJECT_DIR$/Server/app/partials/passenger_input.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/partials/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="27" selection-start="2252" selection-end="2252" vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="2124">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="1" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="1638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="299" selection-end="299" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="187" selection-end="187" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="414">
           <folding />
         </state>
       </provider>
@@ -496,21 +410,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+        <state line="18" column="46" selection-start="700" selection-end="700" vertical-scroll-proportion="0.43142477" vertical-offset="0" max-vertical-offset="751">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/Server/app/partials/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="324" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2124">
+        <state line="90" column="27" selection-start="2252" selection-end="2252" vertical-scroll-proportion="2.237569" vertical-offset="0" max-vertical-offset="2124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07594936" vertical-offset="54" max-vertical-offset="3078">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/app/partials/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="451" selection-end="451" vertical-scroll-proportion="0.27348065" vertical-offset="0" max-vertical-offset="724">
+        <state line="11" column="35" selection-start="430" selection-end="430" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="624" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="343" selection-end="343" vertical-scroll-proportion="0.17721519" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="43" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.89873415" vertical-offset="1665" max-vertical-offset="2430">
           <folding />
         </state>
       </provider>

@@ -1,3 +1,8 @@
+@font-face
+{
+    font-family: mainfont;
+    src: url(../vendor/fonts/OCRAStd.otf);
+}
 .driver_inputheader
 {
     position:fixed;
@@ -23,20 +28,17 @@
 }
 .driver_inputinputbox{
     margin: 5%;
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 70%;
     background-color: #f0edbb;
     display: inline-block;
 }
 
 .rowdriver_input{
-    margin-top: 10%;
+    margin-top: 5%;
     width: 100%;
     /*margin: 0 auto;*/
     text-align: center;
-}
-
-.rowdriver_input{
     cursor: pointer;
 }
 
@@ -79,8 +81,50 @@
     background-color: blue;
 }
 
-.driver_inputfylkewrapper{
-    width:110px;
-    height:110px;
-    border:thin solid black;
+ul#driver_input_menu, ul#driver_input_menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+}
+ul#driver_input_menu li, ul#driver_input_menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#driver_input_menu li a, ul#driver_input_menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 5px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#driver_input_menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#driver_input_menu li ul.sub-menu {
+    display:none;
+    top: 30px;
+    left: 0;
+    width: 150px;
+}
+ul#driver_input_menu li:hover ul.sub-menu {
+    display:block;
+}
+.driver_input_menu_fixer:hover{
+    height: 200px;
+    overflow-y: scroll;
+}
+.driver_input_menu_fixer_2{
+    height: 225px;
+    overflow: hidden;
+}
+.driver_input_menu_wrapper{
+    margin-top: 7%;
+}
+.driver_inputbox{
+    font-family: mainfont Arial;
+}
+.driver_input_font{
+    font-family: rowdriver_input !important;
 }
