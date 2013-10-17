@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689230aa-4475-41dd-b29d-55524d1f71ef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/js/controllers.js" afterPath="$PROJECT_DIR$/Server/app/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/css/driver_input.css" afterPath="$PROJECT_DIR$/Server/app/css/driver_input.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/partials/driver_input.html" afterPath="$PROJECT_DIR$/Server/app/partials/driver_input.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/app/index.html" afterPath="$PROJECT_DIR$/Server/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="startupweekend2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +28,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="720">
+            <state line="6" column="36" selection-start="158" selection-end="158" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driver_input.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="driver_input.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="31" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.12430939" vertical-offset="396" max-vertical-offset="2700">
+            <state line="12" column="18" selection-start="523" selection-end="523" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="414">
               <folding />
             </state>
           </provider>
@@ -56,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driver_input.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="driver_input.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="1" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.0" vertical-offset="1499" max-vertical-offset="2322">
+            <state line="85" column="1" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.85619175" vertical-offset="887" max-vertical-offset="1638">
               <folding />
             </state>
           </provider>
@@ -93,8 +89,8 @@
         <option value="$PROJECT_DIR$/Server/app/partials/main.html" />
         <option value="$PROJECT_DIR$/Server/app/js/controllers.js" />
         <option value="$PROJECT_DIR$/Server/app/index.html" />
-        <option value="$PROJECT_DIR$/Server/app/css/driver_input.css" />
         <option value="$PROJECT_DIR$/Server/app/partials/driver_input.html" />
+        <option value="$PROJECT_DIR$/Server/app/css/driver_input.css" />
       </list>
     </option>
   </component>
@@ -434,21 +430,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="1" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.0" vertical-offset="1499" max-vertical-offset="2322">
+        <state line="6" column="36" selection-start="158" selection-end="158" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/app/partials/driver_input.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.12430939" vertical-offset="396" max-vertical-offset="2700">
+        <state line="12" column="18" selection-start="523" selection-end="523" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/app/css/driver_input.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="1" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.85619175" vertical-offset="887" max-vertical-offset="1638">
           <folding />
         </state>
       </provider>
