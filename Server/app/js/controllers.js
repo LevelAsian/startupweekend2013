@@ -4,6 +4,7 @@ var client = new WindowsAzure.MobileServiceClient(
     "https://bartebil.azure-mobile.net/",
     "loEjfZcxsJBBwlCLmVZzRQPgawBWbF54"
 );
+var loggedInUser;
 
 angular.module('myApp.controllers', [])
 
@@ -104,6 +105,7 @@ angular.module('myApp.controllers', [])
             for (var i = 0; i < User.length; i++) {
                 if($scope.loginemail == User[i].customerEmail){
                     if($scope.loginpassword == User[i].customerPassword){
+                        loggedInUser = User[i];
                         $location.path("/main");
                     }else{
                         $scope.tekst="Incorrect password";
