@@ -11,42 +11,47 @@ angular.module('myApp.controllers', [])
     $scope.hei = "basdbasdbdadsa";
 
     $scope.goToPassenger_input = function(){
-        $location.path("/map.html");
+        $location.path("passenger_input");
     }
 
-    $scope.goToDriver_output = function(){
-        $location.path("/driver_output");
+    $scope.goToDriver_input = function(){
+        $location.path("driver_input");
     }
 
     })
 
     .controller('driver_inputCtrl', function($scope, $routeParams, $http, $rootScope, $route, $location) {
+    $scope.fylkerselected = []
 
-    $scope.friends = [
-        {name:'John', age:25, gender:'boy'},
-        {name:'Jessie', age:30, gender:'girl'},
-        {name:'Johanna', age:28, gender:'girl'},
-        {name:'Joy', age:15, gender:'girl'},
-        {name:'Mary', age:28, gender:'girl'},
-        {name:'Peter', age:95, gender:'boy'},
-        {name:'Sebastian', age:50, gender:'boy'},
-        {name:'Erika', age:27, gender:'girl'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Patrick', age:40, gender:'boy'},
-        {name:'Samantha', age:60, gender:'girl'}
-    ]
+    $scope.fylker = [
+        {name:'Akershus'},
+        {name:'Østfold'},
+        {name:'Oslo'},
+        {name:'Hedmark'},
+        {name:'Oppland'},
+        {name:'Buskerud'},
+        {name:'Vestfold'},
+        {name:'Telemark'},
+        {name:'Aust-Agder'},
+        {name:'Vest-Agder'},
+        {name:'Rogaland'},
+        {name:'Hordaland'},
+        {name:'Sogn og Fjordane'},
+        {name:'Møre og Romsdal'},
+        {name:'Sør-Trøndelag'},
+        {name:'Nord-Trøndelag'},
+        {name:'Nordland'},
+        {name:'Troms'},
+        {name:'Finnmark'}
+    ];
 
+    $scope.addFylke = function(fylke){
+        if($scope.fylkerselected.indexOf(fylke) == -1){
+            $scope.fylkerselected.push(fylke)
+        }
+    }
+
+    // Ting til å bytte farger på knapper
     $scope.currentclass = "driver_inputtomorrowbutton";
     $scope.currentclass2 = "driver_inputtodaybutton";
 
