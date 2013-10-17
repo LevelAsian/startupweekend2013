@@ -63,6 +63,14 @@ angular.module('myApp.controllers', [])
         }
     }
 
+    $scope.removeFylke = function(fylke){
+        var index = $scope.fylkerselected.indexOf(fylke)
+        console.log("HEI");
+        if(index != -1){
+            $scope.fylkerselected.splice(index,1);
+        }
+    }
+
     $scope.changeclass2 = function(){
         if($scope.currentclass2 == "driver_inputtodaybutton"){
             $scope.currentclass2 = "driver_inputtodaybutton2";
@@ -115,9 +123,9 @@ angular.module('myApp.controllers', [])
 
             $location.path("/main");
         }
+    })
 
-
-
-        
+    .controller('min_sideCtrl', function($scope, $http, $location, $rootScope){
+        $scope.hei ="lol";
     })
 

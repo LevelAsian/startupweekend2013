@@ -1,0 +1,51 @@
+@font-face
+{
+    font-family: min_side_font;
+    src: url(../vendor/fonts/OCRAStd.otf);
+}
+.min_sideheader
+{
+    position:fixed;
+    height: 50px;
+    background-color: #00585f;
+    width: 100%;
+}
+.min_sidebody{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    color: #00585f;
+}
+.min_sidecontent{
+    position:fixed;
+    top:50px;
+    bottom:0;
+    min-height:250px;
+    width:100%;
+    text-align: center;
+}
+.min_sideinputbox{
+    margin: 5%;
+    height: 80%;
+    width: 70%;
+    background-color: #f0edbb;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.min_side_formwrapper{
+    display: inline-block;
+    text-align: center;
+}
+.min_side_form{
+    text-align: left;
+    display: inline-block;
+}
+/*.min_side_knapp{
+    right: 7%;
+    bottom: 7%;
+}
+*/

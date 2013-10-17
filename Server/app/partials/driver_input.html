@@ -30,7 +30,7 @@
                         <div class="driver_input_location_wrapper">
                             <h3>Fylke(r)</h3>
                             <div ng-repeat="fylke in fylkerselected">
-                                <h3>{{fylke}}</h3>
+                                <h3>{{fylke}}<i class="icon-remove driver_input_fylke_remove" ng-click="removeFylke(fylke)"></i></h3>
                             </div>
                         </div>
                     </ul>

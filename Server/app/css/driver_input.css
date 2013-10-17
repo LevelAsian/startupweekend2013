@@ -134,6 +134,7 @@ ul#driver_input_menu li:hover ul.sub-menu {
     width: 217px;
     background-color: #ffffff;
     border-bottom: solid #f5f5f5;
+    font-family: driver_input_font;
 }
 
 .driver_input_innerwrapper{
@@ -145,9 +146,13 @@ ul#driver_input_menu li:hover ul.sub-menu {
 }
 .driver_input_location_wrapper{
     float: left;
+    font-family: driver_input_font;
 }
 .driver_input_knapp{
     position: absolute;
     right: 7%;
     bottom: 7%;
+}
+.driver_input_fylke_remove:hover{
+    cursor: pointer;
 }
