@@ -4,32 +4,37 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
     config(['$routeProvider', function($routeProvider) {
 
         $routeProvider.when('/', {
-            redirectTo: '/register'});
+            redirectTo: '/register'})
 
-        $routeProvider.when('/main', {
+        .when('/main', {
             templateUrl: '/app/partials/main.html',
-            controller: 'mainCtrl'});
+            controller: 'mainCtrl'})
 
-        $routeProvider.when('/driver_input', {
+        .when('/driver_input', {
             templateUrl: '/app/partials/driver_input.html',
-            controller: 'driver_inputCtrl'});
+            controller: 'driver_inputCtrl'})
 
-        $routeProvider.when('/driver_output', {
+        .when('/driver_output', {
             templateUrl: '/app/partials/driver_output.html',
-            controller: 'driver_outputCtrl'});
+            controller: 'driver_outputCtrl'})
 
-        $routeProvider.when('/passenger_input', {
+        .when('/passenger_input', {
             templateUrl: '/app/partials/passenger_input.html',
             controller: 'passenger_inputCtrl'})
 
-        $routeProvider.when('/passenger_output', {
+        .when('/passenger_output', {
             templateUrl: '/app/partials/passenger_output.html',
             controller: 'passenger_outputCtrl'})
 
-        $routeProvider.when('/register', {
+        .when('/register', {
             templateUrl: '/app/partials/register.html',
             controller: 'registerCtrl'})
 
-        $routeProvider.otherwise({
+        .when('/min_side', {
+            templateUrl: '/app/partials/account.html',
+            controller: 'min_sideCtrl'
+            })
+
+        .otherwise({
             redirectTo: '/main'});
     }]);

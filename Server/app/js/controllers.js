@@ -4,6 +4,7 @@ var client = new WindowsAzure.MobileServiceClient(
     "https://bartebil.azure-mobile.net/",
     "loEjfZcxsJBBwlCLmVZzRQPgawBWbF54"
 );
+var loggedInUser;
 
 angular.module('myApp.controllers', [])
 
@@ -21,6 +22,7 @@ angular.module('myApp.controllers', [])
     })
 
     .controller('driver_inputCtrl', function($scope, $routeParams, $http, $rootScope, $route, $location) {
+    $scope.fylkerselected = []
 
     $scope.fylker = [
         {name:'Akershus'},
@@ -42,8 +44,15 @@ angular.module('myApp.controllers', [])
         {name:'Nordland'},
         {name:'Troms'},
         {name:'Finnmark'}
-    ]
+    ];
 
+    $scope.addFylke = function(fylke){
+        if($scope.fylkerselected.indexOf(fylke) == -1){
+            $scope.fylkerselected.push(fylke)
+        }
+    }
+
+    // Ting til å bytte farger på knapper
     $scope.currentclass = "driver_inputtomorrowbutton";
     $scope.currentclass2 = "driver_inputtodaybutton";
 
@@ -52,6 +61,14 @@ angular.module('myApp.controllers', [])
             $scope.currentclass = "driver_inputtomorrowbutton2";
         }else{
             $scope.currentclass = "driver_inputtomorrowbutton";
+        }
+    }
+
+    $scope.removeFylke = function(fylke){
+        var index = $scope.fylkerselected.indexOf(fylke)
+        console.log("HEI");
+        if(index != -1){
+            $scope.fylkerselected.splice(index,1);
         }
     }
 
@@ -79,31 +96,43 @@ angular.module('myApp.controllers', [])
     })
 
     .controller('registerCtrl', function($scope, $http, $location, $rootScope){
+        var User;
+        client.getTable("User").read().done(function (results) {
+            User = results;
+        });
 
         $scope.login = function() {
-            $location.path("/main");
+            for (var i = 0; i < User.length; i++) {
+                if($scope.loginemail == User[i].customerEmail){
+                    if($scope.loginpassword == User[i].customerPassword){
+                        loggedInUser = User[i];
+                        $location.path("/main");
+                    }else{
+                        $scope.tekst="Incorrect password";
+                    }
+                }else{
+                    $scope.tekst="No user with that email";
+                }
+            };
         }
 
-        $scope.message = function() {
-            ""
-        }
         $scope.register = function() {
+
             var user = { customerFirstName: $scope.customerFirstName, customerLastName: $scope.customerLastName, customerEmail: $scope.customerEmail
-            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword
-            , creditCardNumber: $scope.creditCardNumber, cvv: $scope.cvv  };
+            , customerPhoneNumber: $scope.customerPhoneNumber, customerPassword: $scope.customerPassword};
 
             client.getTable("User").insert(user);
 
-            $scope.customerFirstName = "";
-            $scope.customerLastName = "";
-            $scope.customerEmail = "";
-            $scope.customerPhoneNumber = "";
-            $scope.customerPassword = "";
-            $scope.creditCardNumber = "";
-            $scope.cvv = "";
-
             $location.path("/main");
         }
-        
+    })
+
+    .controller('min_sideCtrl', function($scope, $http, $location, $rootScope){
+        $scope.account_first_name = "jQrgen";
+        $scope.account_last_name = "Svennevik Notland"
+        $scope.account_new_password_1 = "";
+        $scope.account_new_password_2 = "";
+        $scope.account_phone_number = 90080822;
+        $scope.account_email = "jorgen.notland@gmail.com";
     })
 

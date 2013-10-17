@@ -1,13 +1,18 @@
 <div class="mainContainer">
     <div class="navbar navColor">
+
+      <!--LOGIN-->
         <div class="navbar-inner">
             <div class="pull-right">
                 <tr>
                     <td>
-                        <input type="text" class="inputtext1 " name="email" id="email" value tabindex="1" placeholder="Email">
+                        <input type="text" class="inputtext1 " name="email" ng-model="loginemail" id="email" value tabindex="1" placeholder="Email">
                     </td>
                     <td>
-                        <input type="password" class="inputtext2 " name="password" id="pass" value tabindex="1" placeholder="Password">
+                        <input type="password" class="inputtext2 " name="password" ng-model="loginpassword" id="pass" value tabindex="1" placeholder="Password">
+                    </td>
+                    <td>
+                        <p style="color:black;">{{tekst}}</p>
                     </td>
                     <td>
                         <button class="loginButton" ng-click="login()">login</button>
@@ -16,6 +21,8 @@
             </div>
 
         </div>
+
+        <!--REGISTRERING-->
         <form class="form-horizontal moveForm" name="customerForm" novalidate>
             <div class="registerbox">
                 <div>
@@ -29,7 +36,7 @@
                     </div>
                     <br>
                     <div class="registerAlign">
-                        <input type="text" id="password" placeholder="Password"
+                        <input type="password" id="password" placeholder="Password"
                                class="form-search input-mysize"
                                ng-model="customerPassword" required>
                     </div>
@@ -47,12 +54,9 @@
                     </div>
                     <br>
                     <button class="btn btn-success moveButton"
-                            ng-click="message()"
-                            ng-click="register(customerFirstName, customerLastName, customerEmail,
-                               customerPassword, rewritePassword, customerPhoneNumber,
-                               creditCardNumber, cvv, expirationDate, postalCode)">Register</button>
+                            ng-click="register()">Register</button>
                 </div>
-                </div>
-            </form>
+            </div>
+        </form>
     </div>
 </div>

@@ -1,0 +1,51 @@
+@font-face
+{
+    font-family: account_font;
+    src: url(../vendor/fonts/OCRAStd.otf);
+}
+.accountheader
+{
+    position:fixed;
+    height: 50px;
+    background-color: #00585f;
+    width: 100%;
+}
+.accountbody{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    color: #00585f;
+}
+.accountcontent{
+    position:fixed;
+    top:50px;
+    bottom:0;
+    min-height:250px;
+    width:100%;
+    text-align: center;
+}
+.accountinputbox{
+    margin: 5%;
+    height: 80%;
+    width: 70%;
+    background-color: #f0edbb;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.account_formwrapper{
+    display: inline-block;
+    text-align: center;
+}
+.account_form{
+    text-align: left;
+    display: inline-block;
+}
+.account_knapp{
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+}
