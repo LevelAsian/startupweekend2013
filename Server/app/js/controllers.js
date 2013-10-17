@@ -21,6 +21,7 @@ angular.module('myApp.controllers', [])
     })
 
     .controller('driver_inputCtrl', function($scope, $routeParams, $http, $rootScope, $route, $location) {
+    $scope.fylkerselected = []
 
     $scope.fylker = [
         {name:'Akershus'},
@@ -42,8 +43,15 @@ angular.module('myApp.controllers', [])
         {name:'Nordland'},
         {name:'Troms'},
         {name:'Finnmark'}
-    ]
+    ];
 
+    $scope.addFylke = function(fylke){
+        if($scope.fylkerselected.indexOf(fylke) == -1){
+            $scope.fylkerselected.push(fylke)
+        }
+    }
+
+    // Ting til å bytte farger på knapper
     $scope.currentclass = "driver_inputtomorrowbutton";
     $scope.currentclass2 = "driver_inputtodaybutton";
 

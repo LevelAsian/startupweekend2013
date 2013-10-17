@@ -1,6 +1,6 @@
 @font-face
 {
-    font-family: mainfont;
+    font-family: driver_input_font;
     src: url(../vendor/fonts/OCRAStd.otf);
 }
 .driver_inputheader
@@ -16,7 +16,7 @@
     height:100%;
     width:100%;
     overflow:hidden;
-
+    color: #00585f;
 }
 .driver_inputcontent{
     position:fixed;
@@ -32,6 +32,7 @@
     width: 70%;
     background-color: #f0edbb;
     display: inline-block;
+    position: relative;
 }
 
 .rowdriver_input{
@@ -40,6 +41,7 @@
     /*margin: 0 auto;*/
     text-align: center;
     cursor: pointer;
+    font-family: driver_input_font;
 }
 
 .driver_inputtodaybutton{
@@ -49,7 +51,7 @@
     padding-bottom: 1%;
     font-size: 180%;
     display: inline-block;
-    background-color: lightgray;
+    background-color: #ffffff;
 }
 .driver_inputtodaybutton2{
     margin: 0;
@@ -58,7 +60,7 @@
     padding-bottom: 1%;
     font-size: 180%;
     display: inline-block;
-    background-color: blue;
+    background-color: #f5f5f5;
 }
 
 .driver_inputtomorrowbutton{
@@ -68,7 +70,7 @@
     padding-bottom: 1%;
     font-size: 180%;
     display: inline-block;
-    background-color: lightgray;
+    background-color: #ffffff;
 }
 
 .driver_inputtomorrowbutton2{
@@ -78,7 +80,7 @@
     padding-bottom: 1%;
     font-size: 180%;
     display: inline-block;
-    background-color: blue;
+    background-color: #f5f5f5;
 }
 
 ul#driver_input_menu, ul#driver_input_menu ul.sub-menu {
@@ -90,10 +92,8 @@ ul#driver_input_menu li, ul#driver_input_menu ul.sub-menu li {
     display: inline-block;
 }
 /*Link Appearance*/
-ul#driver_input_menu li a, ul#driver_input_menu li ul.sub-menu li a {
+ul#driver_input_menu li h4, ul#driver_input_menu li ul.sub-menu li h4 {
     text-decoration: none;
-    color: #fff;
-    background: #666;
     padding: 5px;
     display:inline-block;
 }
@@ -116,15 +116,45 @@ ul#driver_input_menu li:hover ul.sub-menu {
     overflow-y: scroll;
 }
 .driver_input_menu_fixer_2{
-    height: 225px;
+    height: 250px;
     overflow: hidden;
+    cursor: pointer;
+    float: right;
 }
 .driver_input_menu_wrapper{
     margin-top: 7%;
 }
-.driver_inputbox{
-    font-family: mainfont Arial;
+.driver_input_fylkevelger{
+    border-radius: 8px;
+    width: 230px;
+    background-color: #ffffff;
+    font-family: driver_input_font;
 }
-.driver_input_font{
-    font-family: rowdriver_input !important;
+.driver_input_fylke{
+    width: 217px;
+    background-color: #ffffff;
+    border-bottom: solid #f5f5f5;
 }
+
+.driver_input_innerwrapper{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.driver_input_menu{
+    text-align: center;
+}
+.driver_input_location_wrapper{
+    float: left;
+}
+.driver_input_knapp{
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+}
+
+/*
+  #container { text-align: center; }
+#div-1 { float: left; }
+#div-2 { display: inline; }
+#div-3 { float: right; }
+*/

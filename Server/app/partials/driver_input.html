@@ -5,26 +5,39 @@
             <h1>WHEN DO YOU WANT TO DRIVE?</h1>
             <div class="rowdriver_input">
                 <div ng-class="currentclass2" ng-click="changeclass2()">
-                    <p class="driver_input_font">TODAY</p>
+                    <p>TODAY</p>
                 </div>
                 <div ng-class="currentclass" ng-click="changeclass1()">
                     <p>TOMORROW</p>
                 </div>
             </div>
             <div class="driver_input_menu_wrapper">
-                <ul id="driver_input_menu">
-                    <h1>WHERE ARE YOU LOCATED?</h1>
-                    <li class="driver_input_menu_fixer_2"><a href="">Velg fylke(r)<i class="icon-arrow-down"></i></a>
-                        <div class="driver_input_menu_fixer">
-                            <ul class="sub-menu"  ng-repeat="fylke in fylker | orderBy:'name'" >
-                                <li>
-                                    <h4>{{fylke.name}}</h4>
-                                </li>
-                            </ul>
+                <div class="driver_input_innerwrapper">
+                    <ul id="driver_input_menu">
+                        <h1>WHERE ARE YOU LOCATED?</h1>
+                        <li class="driver_input_menu_fixer_2">
+                            <div class="driver_input_fylkevelger">
+                                <h4>Velg fylke(r)<i class="icon-arrow-down"></i></h4>
+                            </div>
+                            <div class="driver_input_menu_fixer">
+                                <ul class="sub-menu"  ng-repeat="fylke in fylker | orderBy:'name'" >
+                                    <li class="driver_input_fylke" ng-click="addFylke(fylke.name)">
+                                        <h4>{{fylke.name}}</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="driver_input_location_wrapper">
+                            <h3>Fylke(r)</h3>
+                            <div ng-repeat="fylke in fylkerselected">
+                                <h3>{{fylke}}</h3>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
+            <!-- HER ER DET EN STYGG HREF -->
+            <a href="#/driver_output"><button class="btn-success btn-large btn driver_input_knapp">NEXT</button></a>
         </div>
     </div>
 </div>
