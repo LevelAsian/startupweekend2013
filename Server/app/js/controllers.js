@@ -134,5 +134,6 @@ angular.module('myApp.controllers', [])
         $scope.account_new_password_2 = "";
         $scope.account_phone_number = 90080822;
         $scope.account_email = "jorgen.notland@gmail.com";
+        
     })
 
